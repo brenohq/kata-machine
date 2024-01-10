@@ -138,7 +138,7 @@ module.exports = {
             args: "item: T",
             return: "void",
         }, {
-            name: "deque",
+            name: "dequeue",
             args: "",
             return: "T | undefined",
         }, {
@@ -316,4 +316,3 @@ module.exports = {
         return: "number[] | null",
     },
 };
-
