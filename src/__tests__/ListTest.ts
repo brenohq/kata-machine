@@ -3,7 +3,11 @@ export function test_list(list: List<number>): void {
     list.append(7);
     list.append(9);
 
+    expect(list.get(0)).toEqual(5);
+    expect(list.get(1)).toEqual(7);
     expect(list.get(2)).toEqual(9);
+    expect(list.length).toEqual(3);
+
     expect(list.removeAt(1)).toEqual(7);
     expect(list.length).toEqual(2);
 
@@ -22,5 +26,7 @@ export function test_list(list: List<number>): void {
     expect(list.get(0)).toEqual(9);
     expect(list.remove(9)).toEqual(9);
     expect(list.length).toEqual(2);
+    expect(list.remove(5)).toEqual(5);
+    expect(list.length).toEqual(1);
     expect(list.get(0)).toEqual(7);
 }
